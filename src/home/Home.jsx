@@ -1,13 +1,13 @@
-import ScoreTable from "../components/Table/ScoreTable";
+
 import SingleMatchHighLighted from "../components/singleMatch/SingleMatchHighLighted";
 
 
 const Home = () => {
     return (
-        <div>
-            Home
+        <div className="pt-24">
+           
             <SingleMatchHighLighted></SingleMatchHighLighted>
-            {/* <ScoreTable></ScoreTable> */}
+           
         </div>
     );
 };
