@@ -1,0 +1,186 @@
+{
+
+   
+    "matches": [
+      {
+        "matchId": 1,
+        "type": "OneDay",
+        "date": "2024-01-05",
+        "start": "14:30",
+        "end": "18:30",
+        "location": {
+          "country": "Bangladesh",
+          "ground": "Sher-e-Bangla National Cricket Stadium"
+        },
+        "teams": [
+          {
+            "name": "Bangladesh",
+            "country": "Bangladesh",
+            "players": [
+              {
+                "name": "Tamim Iqbal",
+                "age": 32,
+                "strikeRate": 78.23,
+                "numberOf50": 45,
+                "numberOf100": 11
+              },
+              {
+                "name": "Shakib Al Hasan",
+                "age": 34,
+                "strikeRate": 85.67,
+                "numberOf50": 30,
+                "numberOf100": 9
+              },
+              {
+                "name": "Mushfiqur Rahim",
+                "age": 33,
+                "strikeRate": 78.45,
+                "numberOf50": 28,
+                "numberOf100": 7
+              },
+              {
+                "name": "Mahmudullah",
+                "age": 35,
+                "strikeRate": 82.34,
+                "numberOf50": 22,
+                "numberOf100": 5
+              },
+              {
+                "name": "Mohammad Mithun",
+                "age": 30,
+                "strikeRate": 75.89,
+                "numberOf50": 12,
+                "numberOf100": 2
+              },
+              {
+                "name": "Litton Das",
+                "age": 26,
+                "strikeRate": 87.56,
+                "numberOf50": 15,
+                "numberOf100": 3
+              },
+              {
+                "name": "Afif Hossain",
+                "age": 22,
+                "strikeRate": 96.12,
+                "numberOf50": 5,
+                "numberOf100": 0
+              },
+              {
+                "name": "Mahedi Hasan",
+                "age": 24,
+                "strikeRate": 85.23,
+                "numberOf50": 2,
+                "numberOf100": 0
+              },
+              {
+                "name": "Taskin Ahmed",
+                "age": 27,
+                "strikeRate": 54.76,
+                "numberOf50": 0,
+                "numberOf100": 0
+              },
+              {
+                "name": "Mustafizur Rahman",
+                "age": 25,
+                "strikeRate": 61.34,
+                "numberOf50": 1,
+                "numberOf100": 0
+              },
+              {
+                "name": "Mehidy Hasan",
+                "age": 23,
+                "strikeRate": 67.45,
+                "numberOf50": 3,
+                "numberOf100": 0
+              }
+            ]
+          },
+          {
+            "name": "South Africa",
+            "country": "South Africa",
+            "players": [
+              {
+                "name": "Quinton de Kock",
+                "age": 29,
+                "strikeRate": 92.15,
+                "numberOf50": 22,
+                "numberOf100": 5
+              },
+              {
+                "name": "Hashim Amla",
+                "age": 38,
+                "strikeRate": 87.23,
+                "numberOf50": 41,
+                "numberOf100": 27
+              },
+              {
+                "name": "Faf du Plessis",
+                "age": 37,
+                "strikeRate": 87.65,
+                "numberOf50": 41,
+                "numberOf100": 12
+              },
+              {
+                "name": "Rassie van der Dussen",
+                "age": 32,
+                "strikeRate": 89.76,
+                "numberOf50": 10,
+                "numberOf100": 2
+              },
+              {
+                "name": "David Miller",
+                "age": 32,
+                "strikeRate": 98.34,
+                "numberOf50": 13,
+                "numberOf100": 2
+              },
+              {
+                "name": "Heinrich Klaasen",
+                "age": 29,
+                "strikeRate": 92.89,
+                "numberOf50": 3,
+                "numberOf100": 1
+              },
+              {
+                "name": "Andile Phehlukwayo",
+                "age": 25,
+                "strikeRate": 81.45,
+                "numberOf50": 3,
+                "numberOf100": 0
+              },
+              {
+                "name": "Kagiso Rabada",
+                "age": 26,
+                "strikeRate": 56.78,
+                "numberOf50": 2,
+                "numberOf100": 0
+              },
+              {
+                "name": "Anrich Nortje",
+                "age": 27,
+                "strikeRate": 45.67,
+                "numberOf50": 0,
+                "numberOf100": 0
+              },
+              {
+                "name": "Tabraiz Shamsi",
+                "age": 32,
+                "strikeRate": 34.21,
+                "numberOf50": 0,
+                "numberOf100": 0
+              },
+              {
+                "name": "Aiden Markram",
+                "age": 27,
+                "strikeRate": 89.12,
+                "numberOf50": 7,
+                "numberOf100": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  
