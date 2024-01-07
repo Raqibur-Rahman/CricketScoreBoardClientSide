@@ -6,7 +6,7 @@ const Navbar = () => {
             <Link to="/">Home</Link>
         </li>
         <li>
-            <Link to="/live-scores">Live Scores</Link>
+            <Link to="/upcoming">Up Coming </Link>
         </li>
         <li>
             <Link to="/teams">Teams</Link>
@@ -15,19 +15,20 @@ const Navbar = () => {
             <Link to="/players">Players</Link>
         </li>
         <li>
-            <Link to="/statistics">Statistics</Link>
+            <Link to="/statistics">Rankings</Link>
+        </li>
+        <li>
+            <Link to="/news">News</Link>
         </li>
         <li>
             <Link to="/about-us">About Us</Link>
         </li>
-        <li>
-            <Link to="/contact">Contact</Link>
-        </li>
+       
 
     </>
     return (
         <div>
-            <div className="navbar fixed bg-base-100 h-24 max-w-7xl mx-auto">
+            <div className="navbar  bg-base-200  fixed h-24 max-w-7xl mx-auto">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

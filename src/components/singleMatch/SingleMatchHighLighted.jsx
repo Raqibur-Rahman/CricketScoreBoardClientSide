@@ -13,7 +13,7 @@ const SingleMatchHighLighted = () => {
           throw new Error('Failed to fetch data');
         }
         const data = await response.json();
-        setMatchData(data[0].matches); // Assuming the matches are inside the first element of the array
+        setMatchData(data);
       } catch (error) {
         console.error('Error fetching data:', error);
       }
@@ -22,9 +22,7 @@ const SingleMatchHighLighted = () => {
     fetchData();
   }, []);
 
-  // Function to handle the "Details" button click
   const handleDetailsClick = (matchId) => {
-    // Navigate to the details route with the specific matchId
     navigate(`/detailsById/${matchId}`);
   };
 
@@ -37,38 +35,45 @@ const SingleMatchHighLighted = () => {
   return (
     <div className="container mx-auto">
       {matchData ? (
-        <div>
-          <div className="grid grid-cols-4 gap-4 ">
-            {matchData.map((match) => (
-              <div key={match.matchId} className="bg-teal-100 justify-between rounded-md p-1 m-1">
-                <div className="flex justify-between rounded-md ">
-                  <p>{`Type: ${match.type}`}</p>
-                  <p>{`Date: ${match.date}`}</p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 items-center">
+          {matchData.map((match) => (
+            <div key={match.matchId} className="bg-slate-100 shadow-md rounded-lg p-4 m-4">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center">
+                  <p className="text-lg font-semibold">{match.type}</p>
                 </div>
-                {match.teams && match.teams.map((team) => (
-                  <div key={team.country}>
-                    <div className="flex justify-between">
-                      <p>{team.country}</p>
-                      {/* Manually calculating total score and total wickets */}
-                      <p>{`${calculateTeamTotal(team.battingScoreboard, team.bowlingScoreboard).totalScore}/${calculateTeamTotal(
-                        team.battingScoreboard,
-                        team.bowlingScoreboard
-                      ).totalWickets}`}</p>
-                    </div>
+                <p className="text-gray-700 text-sm">{match.date}</p>
+              </div>
+
+              <div className="mt-4">
+                {match.teams && match.teams.map((team, index) => (
+                  <div key={team.country} className={`flex items-center mb-4 ${index !== 0 ? 'border-t-2 pt-4' : ''}`}>
+                    <img src={team.flag} alt={team.country} className="w-8 h-8 mr-3" />
+                    <p className="text-lg font-semibold">{team.country}</p>
+                    <p className="text-gray-700 ml-auto">{`${calculateTeamTotal(
+                      team.battingScoreboard,
+                      team.bowlingScoreboard
+                    ).totalScore}/${calculateTeamTotal(
+                      team.battingScoreboard,
+                      team.bowlingScoreboard
+                    ).totalWickets}`}</p>
                   </div>
                 ))}
-                <div className="flex justify-center">
-                  {/* Pass the matchId to the handleDetailsClick function */}
-                  <button onClick={() => handleDetailsClick(match.matchId)} className="btn btn-outline btn-success">
-                    Details
-                  </button>
-                </div>
               </div>
-            ))}
-          </div>
+
+              <div className="flex items-center justify-center mt-4">
+                <button
+                  onClick={() => handleDetailsClick(match.matchId)}
+                  className="bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-600 focus:outline-none focus:shadow-outline-green active:bg-green-700"
+                >
+                  Details
+                </button>
+              </div>
+            </div>
+          ))}
         </div>
       ) : (
-        <p>Loading match data...</p>
+        <p className="text-center text-xl font-semibold mt-8">Loading match data...</p>
       )}
     </div>
   );
