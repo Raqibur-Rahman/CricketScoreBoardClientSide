@@ -24,7 +24,7 @@ const SingleMatchHighLighted = () => {
   }, []);
 
   const handleDetailsClick = (matchId) => {
-      navigate(`/detailsById/${matchId}`);
+    navigate(`/detailsById/${matchId}`);
   };
 
   const calculateTeamTotal = (battingScoreboard, bowlingScoreboard) => {
@@ -70,14 +70,16 @@ const SingleMatchHighLighted = () => {
                   Details
                 </button>
 
-              
-                
+
+
               </div>
             </div>
           ))}
         </div>
       ) : (
-        <p className="text-center text-xl font-semibold mt-8">Loading match data...</p>
+        <div className="flex items-center justify-center h-screen">
+          <span className="loading loading-spinner loading-lg"></span>
+        </div>
       )}
     </div>
   );

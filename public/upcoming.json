@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "type": "T20",
+        "date": "2024-02-01",
+        "venue": "Sydney Cricket Ground",
+        "teams": [
+            {
+                "name": "Bangladesh",
+                "flag": "https://cdn-icons-png.flaticon.com/512/3371/3371885.png"
+            },
+            {
+                "name": "Australia",
+                "flag": "https://cdn-icons-png.flaticon.com/512/206/206618.png"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "type": "OneDay",
+        "date": "2024-02-10",
+        "venue": "Lord's Cricket Ground",
+        "teams": [
+            {
+                "name": "England",
+                "flag": "https://cdn-icons-png.flaticon.com/512/4060/4060233.png"
+            },
+            {
+                "name": "South Africa",
+                "flag": "https://cdn-icons-png.flaticon.com/512/3373/3373306.png"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "type": "T20",
+        "date": "2024-02-15",
+        "venue": "Eden Gardens",
+        "teams": [
+            {
+                "name": "Pakistan",
+                "flag": "https://cdn-icons-png.flaticon.com/512/168/168095.png"
+            },
+            {
+                "name": "New Zealand",
+                "flag": "https://cdn-icons-png.flaticon.com/512/206/206731.png"
+            }
+        ]
+    }
+]

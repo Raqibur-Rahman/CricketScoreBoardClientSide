@@ -3,6 +3,7 @@ import Home from "../home/Home";
 import Main from "../Layout/Main";
 import ScoreTable from "../components/Table/ScoreTable";
 import ErrorPage from "../components/errorPage/ErrorPage";
+import UpComing from "../components/upComing/UpComing";
 
 const router = createBrowserRouter([
     {
@@ -12,6 +13,10 @@ const router = createBrowserRouter([
             {
                 path: '/',
                 element: <Home></Home>
+            }, 
+            {
+                path:'/upcoming',
+                element:<UpComing></UpComing>
             },
             {
                 path: '/detailsById/:matchId',
