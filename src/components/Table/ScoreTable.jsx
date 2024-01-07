@@ -121,7 +121,9 @@ const ScoreTable = () => {
         </div>
       ) : (
         <div className="flex items-center justify-center h-screen">
-          <span className="loading loading-spinner loading-lg"></span>
+          <span className="loading loading-ring loading-lg"></span>
+          <span className="loading loading-ring loading-lg"></span>
+          <span className="loading loading-ring loading-lg"></span>
         </div>
       )}
     </div>
