@@ -1,7 +1,12 @@
 import { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 
-const ScoreTable = ({ matchId }) => {
+const ScoreTable = () => {
   const [matchData, setMatchData] = useState(null);
+
+
+  const { matchId } = useParams();
+  console.log("scoreTable ", matchId);
 
   useEffect(() => {
     const fetchData = async () => {

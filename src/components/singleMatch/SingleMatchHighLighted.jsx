@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
+
 const SingleMatchHighLighted = () => {
   const [matchData, setMatchData] = useState(null);
   const navigate = useNavigate();
@@ -23,7 +24,7 @@ const SingleMatchHighLighted = () => {
   }, []);
 
   const handleDetailsClick = (matchId) => {
-    navigate(`/detailsById/${matchId}`);
+      navigate(`/detailsById/${matchId}`);
   };
 
   const calculateTeamTotal = (battingScoreboard, bowlingScoreboard) => {
@@ -68,6 +69,9 @@ const SingleMatchHighLighted = () => {
                 >
                   Details
                 </button>
+
+              
+                
               </div>
             </div>
           ))}

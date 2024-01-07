@@ -14,7 +14,7 @@ const router = createBrowserRouter([
                 element: <Home></Home>
             },
             {
-                path: '/detailsById/:id',
+                path: '/detailsById/:matchId',
                 element: <ScoreTable></ScoreTable>
             }
         ]
