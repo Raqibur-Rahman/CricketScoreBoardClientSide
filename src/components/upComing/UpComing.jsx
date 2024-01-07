@@ -98,7 +98,7 @@ const UpComing = () => {
                             <div className="flex items-center justify-center mt-4">
                                 <button
                                     onClick={() => handleDetailsClick(match)}
-                                    className="btn btn-outline btn-neutral text-black px-4 py-2 rounded-md hover:bg-black focus:outline-none focus:shadow-outline-green active:bg-green-700"
+                                    className="btn btn-outline btn-neutral text-black px-4 py-2 rounded-md hover:bg-black focus:outline-none "
                                 >
                                     Details
                                 </button>

@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 
 const Ranking = () => {
   const [rankingsData, setRankingsData] = useState(null);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -9,8 +10,10 @@ const Ranking = () => {
         const response = await fetch('https://score-board-server.up.railway.app/ranking');
         const data = await response.json();
         setRankingsData(data[0]);
+        setLoading(false); // Set loading to false after data is fetched
       } catch (error) {
         console.error('Error fetching data:', error);
+        setLoading(false); // Set loading to false in case of an error
       }
     };
 
@@ -19,7 +22,17 @@ const Ranking = () => {
 
   return (
     <div className="container mx-auto pt-24">
-      {rankingsData && (
+
+      {loading ? (
+        // Loading state
+        <div className="flex items-center justify-center h-screen">
+          <div className="flex items-center justify-center h-screen">
+            <span className="loading loading-ring loading-lg"></span>
+            <span className="loading loading-ring loading-lg"></span>
+            <span className="loading loading-ring loading-lg"></span>
+          </div>
+        </div>
+      ) : (
         <div>
           {/* Team Rankings */}
           <div className="flex justify-center bg-gray-100 mt-1">
@@ -143,6 +156,9 @@ const Ranking = () => {
           </div>
         </div>
       )}
+
+
+
     </div>
   );
 };

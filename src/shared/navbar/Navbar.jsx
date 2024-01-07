@@ -12,9 +12,6 @@ const Navbar = () => {
             <Link to="/teams">Teams</Link>
         </li>
         <li>
-            <Link to="/players">Players</Link>
-        </li>
-        <li>
             <Link to="/rankings">Rankings</Link>
         </li>
         <li>

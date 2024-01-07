@@ -38,7 +38,7 @@ const SingleMatchHighLighted = () => {
       {matchData ? (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 items-center">
           {matchData.map((match) => (
-            <div key={match.matchId} className="bg-slate-100 shadow-md rounded-lg p-4 m-4">
+            <div key={match.matchId} className="bg-gray-100 shadow-md rounded-lg p-4 m-4">
               <div className="flex items-center justify-between">
                 <div className="flex items-center">
                   <p className="text-lg font-semibold">{match.type}</p>
@@ -65,7 +65,7 @@ const SingleMatchHighLighted = () => {
               <div className="flex items-center justify-center mt-4">
                 <button
                   onClick={() => handleDetailsClick(match.matchId)}
-                  className="btn btn-outline btn-neutral text-black px-4 py-2 rounded-md hover:bg-black focus:outline-none focus:shadow-outline-green active:bg-green-700"
+                  className="btn btn-outline btn-neutral text-black px-4 py-2 rounded-md hover:bg-black focus:outline-none "
                 >
                   Details
                 </button>
