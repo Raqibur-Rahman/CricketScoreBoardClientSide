@@ -15,7 +15,7 @@ const Navbar = () => {
             <Link to="/players">Players</Link>
         </li>
         <li>
-            <Link to="/statistics">Rankings</Link>
+            <Link to="/rankings">Rankings</Link>
         </li>
         <li>
             <Link to="/news">News</Link>

@@ -5,6 +5,7 @@ import ScoreTable from "../components/Table/ScoreTable";
 import ErrorPage from "../components/errorPage/ErrorPage";
 import UpComing from "../components/upComing/UpComing";
 import Teamwise from "../components/teamwise/Teamwise";
+import Ranking from "../components/ranking/Ranking";
 
 const router = createBrowserRouter([
     {
@@ -22,6 +23,9 @@ const router = createBrowserRouter([
             {
                 path: '/teams',
                 element: <Teamwise></Teamwise>
+            }, {
+                path: '/rankings',
+                element: <Ranking></Ranking>
             },
             {
                 path: '/detailsById/:matchId',
